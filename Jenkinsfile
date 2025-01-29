@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('env') {
+            steps {
+                echo 'testing jenkins'
+            }
+        }
         stage('Hello') {
             steps {
                 echo 'Hello World'
